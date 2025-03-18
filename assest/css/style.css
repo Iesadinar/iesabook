@@ -101,6 +101,7 @@ box-shadow: 0px 1px 2px #bbb;
     padding: 24px 10px;
     float: right;
     position: relative;
+
 }
 
 .header_nav li span{
@@ -133,6 +134,7 @@ box-shadow: 0px 1px 2px #bbb;
 
 li .drop_down_menu{
     display: none;
+    z-index: 10;
 }
 
 li:hover .drop_down_menu{

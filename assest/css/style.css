@@ -299,9 +299,7 @@ cursor: pointer;
     border-radius: 8px;
     background: #fff;
     cursor: pointer;
-    opacity: 1;
-    animation: fadeInPost 5s infinite;
-    transition: all .1s ease-in-out;
+
 }
 
 @keyframes fadeIn {

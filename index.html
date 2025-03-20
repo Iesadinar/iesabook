@@ -12,15 +12,36 @@
 <body>
 <div class="main">
     <div class="header">
-            <button class="hamber_menu">
-                <img src="assest/images/hamb2.png">
-            </button>
+            <input type="checkbox"  class="menu_toggle" id="menu_toggle">
+            <label for="menu_toggle" class="hamber_menu" ><img src="assest/images/hamb2.png"></label>
+            <ul class="header_nav1">
+                <li> <a href="index.html">صفحه اصلی</a></li>
+                <li> <a href="#">محصولات</a></li>
+                <li>
+                    <span class="dasteh1">دسته‌ها</span>
+                    <i class="drop_down_icon1"></i>
+                     <ul class="drop_down_menu1">
+                        <li>دینی</li>
+                        <li>ادبیات</li>
+                        <li>رمان و داستان</li>
+                        <li>اجتماعی</li>
+                        <li>فکر و اندیشه</li>
+                        <li>شعر</li>
+                     </ul>
+                </li>
+                <li> <a href="#">تماس با ما</a></li>
+
+            </ul>
+
+
+
+
             <div class="header_logo">
                 <img src="assest/images/logo1.png" alt="iesabook">
             </div>
             <nav>
                 <ul class="header_nav">
-                    <li> <a href="#">صفحه اصلی</a></li>
+                    <li> <a href="index.html">صفحه اصلی</a></li>
                     <li> <a href="#">محصولات</a></li>
                     <li>
                         <span class="dasteh">دسته‌ها</span>
@@ -38,6 +59,11 @@
 
                 </ul>
             </nav>
+
+          
+
+
+
             <div class="btndiv"> <button class="login_btn"> ثبت نام | ورود </button> </div>
 
     </div>
@@ -64,115 +90,124 @@
         <div class="container">
             <h1>جدیدترین محصولات</h1>
             <div class="new_post">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 1.jpg">
+                <a href="pages/single_ghatl-dar-khanevadeh.html">
+
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 1.jpg">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">قتل در خانواده</p>
+                                <p class="new_post_price">250,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر کاراهانتر</p>
+                                <p class="new_post_price_off">180,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
+                                <abr title="افزودن به سبد خرید"> 
+                                    <div class="new_post_basket">
+                                        <img src="assest/images/basket3.png">
+                                    </div>
+                                </abr>
+                            </div>
+                        </div>
                     </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">قتل در خانواده</p>
-                            <p class="new_post_price">250,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر کاواهانتر</p>
-                            <p class="new_post_price_off">180,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
-                            <abr title="افزودن به سبد خرید"> 
-                                <div class="new_post_basket">
-                                    <img src="assest/images/basket3.png">
-                                </div>
-                            </abr>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <div class="new_post">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 4.png" id="hoghough_size">
+                <a href="pages/single_hoghough.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 4.png" id="hoghough_size">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">حقوق الزوجین</p>
+                                <p class="new_post_price">195,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر محمد عبد الله</p>
+                                <p class="new_post_price_off">125,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: اجتماعی </p>
+                                <abr title="افزودن به سبد خرید"> 
+                                    <div class="new_post_basket">
+                                        <img src="assest/images/basket3.png">
+                                    </div>
+                                </abr>
+                            </div>
+                        </div>
                     </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">حقوق الزوجین</p>
-                            <p class="new_post_price">195,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر محمد عبد الله</p>
-                            <p class="new_post_price_off">125,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: اجتماعی </p>
-                            <abr title="افزودن به سبد خرید"> 
-                                <div class="new_post_basket">
-                                    <img src="assest/images/basket3.png">
-                                </div>
-                            </abr>
-                        </div>
-                    </div>
-                </div>
+                </a> 
             </div>
 
             <div class="new_post">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 2.jpg">
+                <a href="pages/single_mard-bibadil.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 2.jpg">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">مردی بی‌بدیل</p>
+                                <p class="new_post_price">235,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر زبیر حسین زئی</p>
+                                <p class="new_post_price_off">195,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: دینی</p>
+                                <abr title="افزودن به سبد خرید"> 
+                                    <div class="new_post_basket">
+                                        <img src="assest/images/basket3.png">
+                                    </div>
+                                </abr>
+                            </div>
+                        </div>
                     </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">مردی بی‌بدیل</p>
-                            <p class="new_post_price">235,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر زبیر حسین زئی</p>
-                            <p class="new_post_price_off">195,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: دینی</p>
-                            <abr title="افزودن به سبد خرید"> 
-                                <div class="new_post_basket">
-                                    <img src="assest/images/basket3.png">
-                                </div>
-                            </abr>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <div class="new_post">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 3.jpg">
+                <a href="pages/single_kondkavi.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 3.jpg">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">کندوکاوی در اوضاع جهان</p>
+                                <p class="new_post_price">350,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر عبد الحکیم عثمانی</p>
+                                <p class="new_post_price_off">297,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: فکر و اندیشه</p>
+                                <abr title="افزودن به سبد خرید"> 
+                                    <div class="new_post_basket">
+                                        <img src="assest/images/basket3.png">
+                                    </div>
+                                </abr>
+                            </div>
+                        </div>
                     </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">کندوکاوی در اوضاع جهان</p>
-                            <p class="new_post_price">350,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر عبد الحکیم عثمانی</p>
-                            <p class="new_post_price_off">297,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: فکر و اندیشه</p>
-                            <abr title="افزودن به سبد خرید"> 
-                                <div class="new_post_basket">
-                                    <img src="assest/images/basket3.png">
-                                </div>
-                            </abr>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
             <div class="clearfix"></div>
 
@@ -200,160 +235,172 @@
         <div class="container">
             <h1>پر فروش‌ترین ها</h1>
             <div class="most_sales_item">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 6.jpg">
+                <a href="pages/single_meraj.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 6.jpg">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">معراج جان‌ها</p>
+                                <p class="new_post_price">200,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر علی جابر الفیفی</p>
+                                <p class="new_post_price_off">160,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: دینی</p>
+                                <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
+                                        <img src="assest/images/basket3.png">
+                                    </div>
+                                </abr>
+                            </div>
+                        </div>
                     </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">معراج جان‌ها</p>
-                            <p class="new_post_price">200,000 تومان</p>
-                            <div class="clearfix"></div>
+                </a>
+            </div>
+            <div class="most_sales_item">
+                <a href="pages/ketabkhane.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 7.jpeg">
                         </div>
-                        <div>
-                            <p class="new_post_description">اثر علی جابر الفیفی</p>
-                            <p class="new_post_price_off">160,000 تومان</p>
-                            <div class="clearfix"></div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">کتابخانه نیمه شب</p>
+                                <p class="new_post_price">250,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر مت هیگ</p>
+                                <p class="new_post_price_off">200,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
+                                <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
+                                    <img src="assest/images/basket3.png">
+                                </div>
+                                </abr>
+                            </div>
                         </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: دینی</p>
-                            <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
+                    </div>
+                </a>
+            </div>
+            <div class="most_sales_item">
+                <a href="pages/single_marg-ivan.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 8.jpg">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">مرگ ایوان ایلیچ</p>
+                                <p class="new_post_price">300,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر لئو تولستوی</p>
+                                <p class="new_post_price_off">250,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
+                                <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
+                                    <img src="assest/images/basket3.png">
+                                </div>
+                                </abr>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="most_sales_item">
+                <a href="pages/single_gozideh.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 12.webp">
+                        </div>
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">گزیده اشعار</p>
+                                <p class="new_post_price">250,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_description">اثر نزار قبانی</p>
+                                <p class="new_post_price_off">200,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: ادبیات</p>
+                                <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
                                     <img src="assest/images/basket3.png">
                                 </div>
                             </abr>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="most_sales_item">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 7.jpeg">
-                    </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">کتابخانه نیمه شب</p>
-                            <p class="new_post_price">250,000 تومان</p>
-                            <div class="clearfix"></div>
+                <a href="pages/single_payambar.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 11.jpg">
                         </div>
-                        <div>
-                            <p class="new_post_description">اثر مت هیگ</p>
-                            <p class="new_post_price_off">200,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
-                            <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
-                                <img src="assest/images/basket3.png">
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">پیامبر</p>
+                                <p class="new_post_price">280,000 تومان</p>
+                                <div class="clearfix"></div>
                             </div>
+                            <div>
+                                <p class="new_post_description">اثر جبران خلیل</p>
+                                <p class="new_post_price_off">210,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
+                                <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
+                                    <img src="assest/images/basket3.png">
+                                </div>
                             </abr>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </a>
             </div>
             <div class="most_sales_item">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 8.jpg">
-                    </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">مرگ ایوان ایلیچ</p>
-                            <p class="new_post_price">300,000 تومان</p>
-                            <div class="clearfix"></div>
+                <a href="pages/single_ghatl-dar-khanevadeh.html">
+                    <div class="new_post_card">
+                        <div class="new_post_pic">
+                            <img src="assest/images/book 1.jpg">
                         </div>
-                        <div>
-                            <p class="new_post_description">اثر لئو تولستوی</p>
-                            <p class="new_post_price_off">250,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
-                            <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
-                                <img src="assest/images/basket3.png">
+                        <div class="new_post_body">
+                            <div>
+                                <p class="new_post_title">قتل در خانواده</p>
+                                <p class="new_post_price">250,000 تومان</p>
+                                <div class="clearfix"></div>
                             </div>
+                            <div>
+                                <p class="new_post_description">اثر کاراهانتر</p>
+                                <p class="new_post_price_off">180,000 تومان</p>
+                                <div class="clearfix"></div>
+                            </div>
+                            <div>
+                                <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
+                                <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
+                                    <img src="assest/images/basket3.png">
+                                </div>
                             </abr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="most_sales_item">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 12.webp">
-                    </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">گزیده اشعار</p>
-                            <p class="new_post_price">250,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر نزار قبانی</p>
-                            <p class="new_post_price_off">200,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: ادبیات</p>
-                            <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
-                                <img src="assest/images/basket3.png">
                             </div>
-                        </abr>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="most_sales_item">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 11.jpg">
-                    </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">پیامبر</p>
-                            <p class="new_post_price">280,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر جبران خلیل</p>
-                            <p class="new_post_price_off">210,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
-                            <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
-                                <img src="assest/images/basket3.png">
-                            </div>
-                        </abr>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="most_sales_item">
-                <div class="new_post_card">
-                    <div class="new_post_pic">
-                        <img src="assest/images/book 1.jpg">
-                    </div>
-                    <div class="new_post_body">
-                        <div>
-                            <p class="new_post_title">قتل در خانواده</p>
-                            <p class="new_post_price">250,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_description">اثر کاواهانتر</p>
-                            <p class="new_post_price_off">180,000 تومان</p>
-                            <div class="clearfix"></div>
-                        </div>
-                        <div>
-                            <p class="new_post_type_description">دسته بندی: داستان و رمان</p>
-                            <abr title="افزودن به سبد خرید"> <div class="new_post_basket">
-                                <img src="assest/images/basket3.png">
-                            </div>
-                        </abr>
-                        </div>
-                    </div>
-                </div>
+                </a>
             </div>
 
 

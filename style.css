@@ -455,7 +455,6 @@ height: 100%;
 border-radius: 10px;
 animation: fadeIn 5s forwards;
 
-
 }
 
 .advertisement_page_left{
@@ -472,7 +471,7 @@ border-radius: 10px;
     height: 100%;
     border-radius: 10px;
     transition: all .1s;
-    animation: fadeIn 5s infinite;
+    animation: fadeIn 5s forwards;
 
 
     }

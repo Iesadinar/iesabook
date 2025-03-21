@@ -124,8 +124,12 @@ box-shadow: 0px 1px 2px #bbb;
 }
 .header_nav > li{
     display: inline-block;
-    padding: 24px 10px;
+    padding: 13px 10px;
     position: relative;
+    margin-top: 15px;
+    border-radius: 11px;
+    margin: 15 0px 0px 0px;
+    transition: all .6s;
 }
 
 .header_nav li span{
@@ -149,10 +153,13 @@ box-shadow: 0px 1px 2px #bbb;
     box-shadow: 1px 1px 3px #777;
     border-radius: 8px;
     top: 100%;
+
 }
 .drop_down_menu li{
     padding: 10px;
     cursor: pointer;
+    transition: all .4s;
+
 
 }
 
@@ -170,23 +177,29 @@ li .dasteh:hover{
 }
 
 .header_nav li:hover{
-    border-bottom: 1px solid #444;
     background-color: #eee;
+    background-color: #4da6ff;
+    color: #fff;
+}
+.header_nav li:hover a{
+    color: #fff;
+}
+.header_nav li:hover span{
+    color: #fff;
 }
 
 .drop_down_menu li:hover {
-    background-color: #eee;
+    background-color: #4da6ff;
     border-bottom: none;
     text-align: center;
+    color:#fff;
 }
 
 .drop_down_menu li:hover:first-child{
-    background-color: #eee;
     border-top-right-radius: 8px;
     border-top-left-radius: 8px;
 }
 .drop_down_menu li:hover:last-child{
-    background-color: #eee;
     border-bottom-right-radius: 8px;
     border-bottom-left-radius: 8px;
 
@@ -1017,6 +1030,67 @@ margin-bottom: 10;
     color:#c74a14;
     float: right;
 }
+
+/*telegram icon animation */
+
+
+.telegram-icon {
+    position: fixed;
+    bottom: -100px; 
+    right: 20px;
+    opacity: 0;
+    animation: slideUpIcon 1s forwards; 
+}
+
+.telegram-icon img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: #56b3ff 0px 0px 4px 0px;
+
+}
+
+@keyframes slideUpIcon {
+    to {
+        bottom: 20px; /* بالا آمدن آیکن به 20px از پایین */
+        opacity: 1;
+ 
+    }
+}
+
+.telegram-icon-txt{
+    position: fixed;
+    bottom: -100px; /* متن هم خارج از صفحه در پایین */
+    right: 80px;
+    opacity: 0; /* پنهان بودن متن در ابتدا */
+    animation: slideUpText 1s forwards 2s; /* انیمیشن بالا آمدن متن با تأخیر */
+}
+
+.telegram-icon-txt h3{
+    margin: 0;
+    padding: 10px;
+    background-color: #0088cc;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 10px;
+    width: max-content;
+}
+@keyframes slideUpText {
+    to {
+        bottom: 25px;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1975,3 +2049,28 @@ h3 {
         width: 100%;
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* یادداشت ها 
+
+a:
+
+border: 1px solid;
+padding: 10px;
+border-radius: 10px;
+
+*/

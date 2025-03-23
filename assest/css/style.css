@@ -412,38 +412,6 @@ margin-left: 15px;
 
 
 
-
-
-
-
-
-@keyframes shine {
-    0% {
-        background: linear-gradient(135deg, #FFB800, #FFD700, #FFCC00);
-        background-size: 400% 400%;
-        color: transparent;
-        -webkit-background-clip: text;
-    }
-    50% {
-        background: linear-gradient(135deg, #FFD700, #FFCC00, #FFB800);
-        background-size: 400% 400%;
-        color: transparent;
-        -webkit-background-clip: text;
-    }
-    100% {
-        background: linear-gradient(135deg, #FFB800, #FFD700, #FFCC00);
-        background-size: 400% 400%;
-        color: transparent;
-        -webkit-background-clip: text;
-    }
-}
-
-
-
-
-
-
-
 .page_into_right_btns{
 
     margin: 40px auto;

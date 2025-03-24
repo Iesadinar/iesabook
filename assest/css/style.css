@@ -738,7 +738,7 @@ width: 100%;
     overflow: hidden;
     animation: gradientMove 8s ease infinite;
     border-top-right-radius: 20px;
-    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
 
 }
 

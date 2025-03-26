@@ -1568,7 +1568,7 @@ padding-right: 15px;
 .main1{
     background: url('../images/backbuy1.png')no-repeat;
     background-size: cover;
-    height: 135vh;
+    height: auto;
 }
 
 

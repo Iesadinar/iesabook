@@ -14,7 +14,7 @@
 <div class="main">
 
     <div class="header">
-        <input type="checkbox"  class="menu_toggle" id="menu_toggle">
+        <!-- <input type="checkbox"  class="menu_toggle" id="menu_toggle">
         <label for="menu_toggle" class="hamber_menu" ><img src="../assest/images/hamb2.png"></label>
         <ul class="header_nav1">
             <li> <a href="../index.html">صفحه اصلی</a></li>
@@ -54,16 +54,68 @@
                     <li> <a href="contactUs.html">تماس با ما</a></li>
 
                 </ul>
-            </nav>
+            </nav> -->
+            <div class="hamber">
+                <img src="../assest/images/hamb2.png" id="hambid">
+            </div>
+             <div class="divid" id="divid">
+                <div class="menu-header">
+                    <div class="typeo">
+                        <h1>فروشگاه آنلاین عیسی بوک</h1>
+                    </div>
+                    <div class="close">
+                        <img src="../assest/images/close (1).png" id="closeid">
+                    </div>
+                </div>
+
+                   <ul class="menu">
+                        <li>
+                            <a href="../index.html">صفحه اصلی</a>
+                        </li>
+                        <li>
+                            <a href="../index.html#new_posts" id="new_postsid">محصولات</a>
+                        </li>
+                        <li>
+                            دسته‌بندی‌ها
+                            <!-- <span class="arrow">▼</span> -->
+                            <img src="../assest/images/dropdown.png" class="arrow">
+
+                            <ul class="submenu">
+                                <li onclick="event.stopPropagation();"><a href="dasteh.html#dasteh_dini">دینی</a></li>
+                                <li onclick="event.stopPropagation();"><a href="dasteh.html#dasteh_adabiat">شعر و ادبیات</a></li>
+                                <li onclick="event.stopPropagation();"><a href="dasteh.html#dasteh_roman">رمان و داستان</a></li>
+                                <li onclick="event.stopPropagation();"><a href="dasteh.html#dasteh_ejtemaei">اجتماعی</a></li>
+                                <li onclick="event.stopPropagation();"><a href="dasteh.html#dasteh_fekr">فکر و اندیشه</a></li>
+                            </ul>
+                            </li>
+                        <li>
+                            <a href="contactUs.html">تماس با ما</a>
+                        </li>
+                    </ul>
+
+            </div> 
             <div class="btndiv"> <a href="login.html"><button class="login_btn"> ثبت نام | ورود </button></a> </div>
 
     </div><br> 
-    <h1 class="dasteh_h1">دسته بندی ها</h1>
+    <div class="dasteh">
+        <h1 class="dasteh_h1">دسته بندی ها</h1>
+    </div>
+    <div class="dasteh_bandi">
+        <ul>
+           <li><a href="dasteh.html#dasteh_dini">دینی</a> </li>
+            <li><a href="dasteh.html#dasteh_adabiat">شعر و ادبیات</a></li>
+            <li><a href="dasteh.html#dasteh_roman">رمان و داستان</a></li>
+           <li> <a href="dasteh.html#dasteh_ejtemaei">اجتماعی</a> </li>
+            <li><a href="dasteh.html#dasteh_fekr">فکر و اندیشه</a></li>
+        </ul>
+    </div>
+
+
     <div class="dasteh_ha">
         <div class="dasteh_dini" id="dasteh_dini">
             <div class="new_posts" id="new_posts">
                 <div class="container">
-                    <br><br>
+                    <br><br><br><br>
                     <h1>دسته بندی: دینی</h1>
                     <div class="new_post">
                         <a href="../pages/single_ghatl-dar-khanevadeh.html">
@@ -195,7 +247,8 @@
         <div class="dasteh_dini" id="dasteh_adabiat">
             <div class="new_posts" id="new_posts">
                 <div class="container">
-                    <br><br>
+                    <br><br><br><br>
+
                     <h1>دسته بندی: شعر و ادبیات</h1>
                     <div class="new_post">
                         <a href="../pages/single_ghatl-dar-khanevadeh.html">
@@ -327,7 +380,7 @@
         <div class="dasteh_dini" id="dasteh_roman">
             <div class="new_posts" id="new_posts">
                 <div class="container">
-                    <br><br>
+                    <br><br><br><br>
 
                     <h1>دسته بندی: رمان و داستان</h1>
                     <div class="new_post">
@@ -457,10 +510,10 @@
                 </div>
             </div>
         </div>
-        <div class="dasteh_ejtemaei" id="dasteh_ejtemaei">
+        <div class="dasteh_dini" id="dasteh_ejtemaei">
             <div class="new_posts" id="new_posts">
                 <div class="container">
-                    <br><br>
+                    <br><br><br><br>
                     <h1>دسته بندی: اجتماعی</h1>
                     <div class="new_post">
                         <a href="../pages/single_ghatl-dar-khanevadeh.html">
@@ -589,10 +642,10 @@
                 </div>
             </div>
         </div>
-        <div class="dasteh_fekr" id="dasteh_fekr">
+        <div class="dasteh_dini" id="dasteh_fekr">
             <div class="new_posts" id="new_posts">
                 <div class="container">
-                    <br><br>
+                    <br><br><br><br>
                     <h1>دسته بندی: فکر و اندیشه</h1>
                     <div class="new_post">
                         <a href="../pages/single_ghatl-dar-khanevadeh.html">
@@ -781,7 +834,7 @@
 
 
 </div>
-
+<script src="../assest/js/main.js"></script>
 </body>
 
 </html>

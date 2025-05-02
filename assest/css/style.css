@@ -14,6 +14,20 @@
     src: url(../fonts/sepidar.ttf);
 }
 
+@font-face {
+    font-family: aban;
+    font-weight: 200;
+    src: url(../fonts/W.aban_YasDL.com.ttf);
+}
+
+
+
+
+
+
+
+
+
 html {
     scroll-behavior: smooth;
 }
@@ -41,6 +55,9 @@ dd{
     margin: 0px 2px 0px 0px;
 }
 
+h1{
+    font-family: aban;
+}
 h3{
     margin: 10px 5px 0px 0px;
     color:#7cc4ff;
@@ -141,6 +158,7 @@ padding-left: 90px;
     width: 100%;
     height: auto;
     transition: all .2s;
+    cursor: pointer;
 }
 
 #divid {
@@ -202,16 +220,30 @@ padding-left: 90px;
     height: 100%;
     background: white;
     overflow: hidden;
+
 }
+
+
+.dasteh_para{
+    margin: 0 20 0 0
+}
+
+
 
 .menu > li {
     position: relative;
-    padding: 15px 20px;
+    padding: 15px 0px;
     cursor: pointer;
     background: #fff;
     border-bottom: 1px solid #eee;
     transition: all 0.3s;
 }
+
+.menu  li  a {
+    padding: 0px 20px 0px 0px;
+}
+
+
 
 .menu > li:hover {
     background: #f9f9f9;
@@ -219,16 +251,27 @@ padding-left: 90px;
 
 .submenu {
     list-style: none;
-    padding-right: 20px;
+    padding-right: 0px;
     display: none; 
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease, padding 0.3s ease;
+
 }
+
+
+
+
 
 .submenu li {
     padding: 10px 0;
+    transition: all .5s;
 }
+
+.submenu li:hover {
+    background-color: #bbbbbb7e
+}
+
 
 .menu li.open .submenu {
     display: block;
@@ -236,7 +279,22 @@ padding-left: 90px;
     padding-bottom: 10px;
     margin-top: 16px;
     border-top: 1px solid #d2d2d2;
+    transition: 0.3s ease;
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .arrow {
     position: absolute;
@@ -252,7 +310,12 @@ padding-left: 90px;
 
 .menu > li.open .arrow {
     transform: rotate(180deg);
+
 }
+
+
+
+
 
 
 /* جدید تمام شد */
@@ -645,6 +708,47 @@ margin-left: 15px;
 } 
 
 
+.input_search1{
+    width: 405px;
+    height: auto;
+    margin-top: 12px;
+    float: right;
+    margin-right: 30px;
+    display: none;
+
+}
+
+ #searchInput1{
+    outline: none;
+    border-radius: 12px;
+    width: 400px;
+    height: 44px;
+    border: none;
+    padding: 12px;
+
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .circles{
     width: 85%;
     margin-right: auto;
@@ -807,22 +911,16 @@ cursor: pointer;
 }
 .new_post_card{
     width: 100%;
-    height: 356px;
+    height: 250px;
     padding-top: 3px;
-    border-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
     background: #fff;
     cursor: pointer;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
 
 
 }
-
-
-
-
-
-
-
 
 
 .container h1{
@@ -832,7 +930,7 @@ cursor: pointer;
 }
 .new_post_pic{
     width: 100%;
-    height: 250px;
+    height: 100%;
 }
 .new_post_pic img{
     width: 100%;
@@ -849,8 +947,18 @@ cursor: pointer;
 
 
 .new_post_body{
+    height: 101;
+    margin-top: 5px;
+    background: #fff;
     padding: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+
 }
+
+
 
 /* 1st line */
  .new_post_title{
@@ -925,10 +1033,10 @@ border-radius: 10px;
 
 
 /* hover new posts*/
-.new_post_card:hover{
+.new_post_pic:hover{
     border-radius: 10px;
     box-shadow: 0px 0px 0px #373737;
-    border: 0.25px solid #2760ff;
+    /* border: 0.25px solid #2760ff; */
 }
 
 .new_post_card img:hover{
@@ -945,6 +1053,9 @@ transform: scale(1);
     border: 0.25px solid #2760ff;
 } 
 
+.new_post_body:hover{
+    box-shadow: none;
+}
 
 
 
@@ -1045,6 +1156,14 @@ border-bottom-left-radius: 16px;
 
 
 /*why_us section (6)*/
+.why_us{
+    background-color: #fff ;
+}
+
+
+
+
+
 .why_us_item{
     width: 25%;
     height: auto;
@@ -1075,27 +1194,134 @@ border-bottom-left-radius: 16px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+.main_question {
+    background-color: #ffffff;
+    width: 100%;
+    height: 65px;
+    padding: 0px 50px;
+    display: flex;
+
+}
+
+.main_question_part_1{
+ margin-left: 5px;
+ font-family: aban;
+ font-size: 30px;
+}
+.main_question_part_2{
+    font-family: aban;
+    font-size: 30px;
+    color:#083bc7
+
+}
+.questions{
+    background-color: #ffffff;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start; 
+    padding: 0px 50px ;
+
+
+}
+
+
+
+.question{
+    background-color: #ffffff;
+    width: 48%;
+    height: auto;
+    margin:  4px 8px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.08) ;
+    padding: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+    border: 0.25px solid #dddada
+}
+
+.question > p{
+    font-family: aban;
+    font-size: 20px;
+
+}
+
+
+.q-arrow{
+    width: 15px;
+    height: 15px;
+    float: left;
+    margin: 9px;
+    transition: 0.5s;
+}
+
+.question.active .q-arrow {
+    transform: rotate(180deg);
+
+}
+
+
+.answer {
+    text-align: justify;
+    line-height: 1.5;
+    display: none; 
+    margin-top: 12px;
+    font-size: 16px;
+    color: #555;
+
+}
+
+.question.active .answer {
+    display: block; 
+
+}
+
+
+
+
+
+
+
+
+
+
 /*footer section (7)*/
 
 .main_footer{
     width: 100%;
     height: 250px;
     background-color: #444;
-    background: linear-gradient(270deg, #007cf0, #00dfd8, #007cf0);
+    /* background: linear-gradient(270deg, #007cf0, #00dfd8, #007cf0); */
+    background-color: #247dbda4;
     background-size: 600% 600%;
     padding: 5px 0px;
     overflow: hidden;
     animation: gradientMove 8s ease infinite;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+    /* border-top-left-radius: 20px;
+    border-top-right-radius: 20px; */
 
 }
 
-@keyframes gradientMove {
+/* @keyframes gradientMove {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
   100% { background-position: 0% 50%; }
-}
+} */
 
 
 
@@ -1193,11 +1419,12 @@ border-bottom-left-radius: 16px;
     margin-bottom: 0px;
     text-align: center;
     bottom: 0px;
-    background-color: #444;
+    background-color: #247dbda4;
     width:100%;
     height:25px;
     padding-top:3px;
     padding-bottom: 2px;
+    margin-top: 1px;
 }
 .main_footer_rule p{
 color: #fff;
@@ -2160,6 +2387,27 @@ padding-right: 15px;
 
 }
 
+
+
+@media screen and (max-width:969px){
+    .dasteh_bandi {
+        width: 80%;}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:990px){
     .single_product_right_pic img{
         width: 90%;
@@ -2182,6 +2430,10 @@ padding-right: 15px;
     }
     .container{
         padding: 0px 105px;
+    }
+    .question {
+        background-color: #ffffff;
+        width: 95%;
     }
 }
 
@@ -2299,6 +2551,18 @@ padding-right: 15px;
 
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:760px){
     .new_post{
         width:50%;
@@ -2360,6 +2624,38 @@ padding-right: 15px;
         padding-right: 40;
     }
 
+    .hamber{
+        float: right;
+        margin: 10px 0;
+
+
+    }
+    .btndiv {
+        float: left;
+        margin-left: 15px;
+        margin-top: 30;
+    }
+
+
+
+
+    .input_search{
+        display: none;
+    }
+    .input_search1{
+        display: block;
+    }
+
+
+
+
+
+
+
+
+
+
+
 }
 
 
@@ -2414,6 +2710,20 @@ padding-right: 15px;
 .main_footer_end {
     margin-right: 40px;
 }
+
+
+.input_search1 {
+    width: 340px;
+}
+#searchInput1 {
+ width: 340px;
+}
+
+
+
+
+
+
 }
 
 @media screen and (max-width:650px){
@@ -2461,6 +2771,52 @@ padding-right: 15px;
 
 
 
+
+
+@media screen and (max-width:650px){
+    .dasteh_bandi {
+        width: 85%;
+    }
+
+
+.dasteh_bandi ul li a {
+    font-size: 15px;
+}
+
+
+
+}
+
+
+
+@media screen and (max-width:615px){
+
+.input_search1 {
+    width: 310px;
+}
+#searchInput1 {
+ width: 310px;
+}
+
+}
+
+
+
+
+
+
+@media screen and (max-width:630px){
+
+    .circles{
+        display: none;
+    }
+    
+    }
+    
+
+
+
+
 @media screen and (max-width:599px){
     h3 {
         font-size: 14px;
@@ -2504,6 +2860,27 @@ padding-right: 15px;
 
 
 
+@media screen and (max-width:590px){
+    .dasteh_bandi {
+        width: 90%;
+    }
+
+
+.dasteh_bandi ul li a {
+    font-size: 15px;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:578px){
 
@@ -2515,7 +2892,16 @@ padding-right: 15px;
     width: 80%;
 }
 
+.input_search1 {
+    width: 300px;
 }
+#searchInput1 {
+ width: 300px;
+}
+
+}
+
+
 
 
 
@@ -2553,6 +2939,14 @@ h3 {
     .main_footer_middle2 dl, dt, dd {
         font-size: 12px;
     }
+
+    .input_search1 {
+        width: 270px;
+    }
+    #searchInput1 {
+     width: 270px;
+    }
+    
 }
 
 
@@ -2624,6 +3018,14 @@ h3 {
     .user_comment_item p {
         margin-top: 18px;
     }
+
+    .dasteh_bandi ul li {
+        padding: 9px;
+    }
+    
+    .dasteh_bandi ul li a {
+        font-size: 13px;
+    }
 }
 
 
@@ -2660,6 +3062,9 @@ h3 {
         padding-right: 67px;
         width: 100%;
     }
+
+
+    
 }
 
 
@@ -2701,6 +3106,12 @@ h3 {
     text-align: center;
 }
 
+.input_search1 {
+    width: 250px;
+}
+#searchInput1 {
+ width: 250px;
+}
 
 }
 
@@ -2751,12 +3162,37 @@ h3 {
 .main_footer_end img {
     height: 60%;
 }
+
+
+.container h1 {
+    font-size: 30px;
+    text-align: center;
+}
+
+
+
+
+
+
 }
 
 @media screen and (max-width: 512px){
     .why_us_item_card{
         height: 200px;
     }
+
+    .dasteh_bandi ul li {
+        padding: 9px 3px;
+    }
+
+    
+    .input_search1 {
+        width: 225px;
+    }
+    #searchInput1 {
+        width: 225px;
+    }
+    
 }
 
 @media screen and (max-width:500px){
@@ -2766,6 +3202,10 @@ h3 {
     .container{
         padding: 0px 60px;
     }
+
+
+
+
 }
 
 
@@ -2807,6 +3247,16 @@ h3 {
     .header_nav > li{
         padding:12px 8px;
     }
+
+
+
+    .input_search1 {
+        width: 208px;
+    }
+    #searchInput1 {
+        width: 208px;
+        font-size: 10px;
+    }
     
 }
 
@@ -2824,12 +3274,21 @@ h3 {
 
 
 
+@media screen and (max-width:465px){
+
+.input_search1 {
+    width: 208px;
+    margin-right: 15px;
+
+}
+#searchInput1 {
+    width: 208px;
+    font-size: 10px;
+}
 
 
 
-
-
-
+}
 
 @media screen and (max-width:460px){
 
@@ -2850,7 +3309,28 @@ h3 {
         display: block;
 
 }
+
+.login_btn {
+    padding: 13px 16px;
+    font-size: 12px;
 }
+
+
+
+
+.input_search1 {
+    margin-right: 7px;
+}
+}
+
+
+
+
+
+
+
+
+
 @media screen and (max-width:475px){
     .header_nav > li{
         padding:12px 6px;
@@ -2915,6 +3395,32 @@ h3 {
         padding-right: 72px;
         padding-top: 27px;
     }
+
+
+
+    .dasteh_bandi ul li {
+        padding: 11px 3px;
+    }
+
+
+    .dasteh_bandi ul li a {
+        font-size: 11px;
+    }
+
+
+    .input_search1 {
+        margin-right: 5px;
+        width: 195px;
+    }
+
+    #searchInput1 {
+        width: 195px;
+        font-size: 10px;
+        width: 195px;
+
+    }
+
+
 }
 
 @media screen and (max-width:430px){
@@ -2931,9 +3437,43 @@ h3 {
             width: 23px;
     }
 
+
+    .input_search1 {
+        margin-right: 5px;
+        width: 185px;
+    }
+
+    #searchInput1 {
+        width: 195px;
+        font-size: 10px;
+        width: 185px;
+
+    }
 }
 
 
+
+
+
+@media screen and (max-width:425px){
+
+.header {
+    padding-right: 16px;
+}
+
+
+.input_search1 {
+    margin-right: 10px;
+    width: 185px;
+}
+#searchInput1 {
+    width: 195px;
+    font-size: 10px;
+    width: 185px;
+}
+
+
+}
 
 
 @media screen and (max-width:421px){
@@ -2967,6 +3507,9 @@ h3 {
         }
         .like_pic {
                 width: 18px;
+        }
+        .dasteh_bandi {
+            width: 95%;
         }
     }
     

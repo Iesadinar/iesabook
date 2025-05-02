@@ -64,8 +64,26 @@ document.querySelectorAll('.question').forEach(q => {
 
 
 
+// نمایش دکمه  بازگشت به اول صفحه هنگام اسکرول
+window.onscroll = function() {
+    const btn = document.getElementById("backToTopBtn");
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+    } else {
+        btn.style.display = "none";
+    }
+};
+
+// اسکرول نرم به بالا
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
 
 
+document.getElementById("backToTopBtn").addEventListener("click", scrollToTop);
 
 
 

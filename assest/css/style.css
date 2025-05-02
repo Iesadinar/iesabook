@@ -3324,11 +3324,14 @@ h3 {
         width: 208px;
         font-size: 10px;
     }
+
+
+
+    .questions {
+        padding: 0px 17px;
+    }
     
 }
-
-
-
 
 
 
@@ -3530,7 +3533,7 @@ h3 {
 
 
 .input_search1 {
-    margin-right: 10px;
+    margin-right: 25px;
     width: 185px;
 }
 #searchInput1 {
@@ -3538,6 +3541,28 @@ h3 {
     font-size: 10px;
     width: 185px;
 }
+
+
+
+.btndiv {
+    margin-left: 30px;
+}
+.login_btn {
+    padding: 12px 9px;
+    font-size: 12px;
+}
+.page_intro h1 {
+    font-size: 35px;
+}
+
+
+
+
+.sepidardiv {
+    width: 310px;
+}
+
+
 
 
 }
@@ -3551,9 +3576,6 @@ h3 {
     .page_intro{ 
         height: 300px;
 
-    }
-    .page_intro h1{ 
-    font-size: 42px        
     }
 }
 
@@ -3577,6 +3599,12 @@ h3 {
         }
         .dasteh_bandi {
             width: 95%;
+        }
+
+
+        .input_search1 {
+            margin-right: 12px;
+            width: 185px;
         }
     }
     
@@ -3619,6 +3647,11 @@ h3 {
     .buying_form {
         width: 90%;
     }
+
+
+    .btndiv {
+        margin-left: 20px;
+    }
 }
 
 
@@ -3628,6 +3661,11 @@ h3 {
 .introducing_sections_left {
     padding-right: 20px;
     width: 100%;
+}
+
+.input_search1 {
+    margin-right: 5px;
+
 }
 }
 
@@ -3657,15 +3695,25 @@ h3 {
     .like_text1 {
         font-size: 12px;
     }
+
+    .btndiv {
+        margin-left: 9px;
+    }
 }
     
     
+
+
 
 
 @media screen and (max-width:373px){
 
 .page_intro h1 {
     font-size: 35px;
+    }
+
+    .input_search1 {
+        margin-top: 14px;
     }
 }
 
@@ -3703,7 +3751,32 @@ h3 {
     .main_footer_middle2 dl, dt, dd {
         font-size: 9px;
     }
+
+    #searchInput1{
+        height: 41px;
+    
+    }
+    
+    .input_search1 {
+        margin-right: 5px;
+        width: 175px;
+    }
+    
+    
+    #searchInput1 {
+        height: 41px;
+        width: 175px;
+    }
+
+
+
+
+
+
 }
+
+
+
 
 
 @media screen and (max-width:357px){
@@ -3725,6 +3798,8 @@ h3 {
         right: 100px;
 }
 
+
+
 }
 
 
@@ -3742,9 +3817,31 @@ h3 {
     .single_product {
         padding: 30px 5px;
     }
+
+
+
+
+
+    #searchInput1 {
+        width: 166px;
+    }
+    
+    .input_search1 {
+        width: 166px;
+    }
+
+
+
+
+
+
 }
+@media screen and (max-width:343px){
 
-
+.btndiv {
+    margin-left: 3px;
+}
+}
 
 
 @media screen and (max-width:335px){

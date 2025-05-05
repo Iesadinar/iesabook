@@ -17,15 +17,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 
-// منو سوالات
-document.querySelectorAll('.question').forEach(q => {
-    q.addEventListener('click', () => {
-        q.classList.toggle('active');
-    });
-});
-
-
-
 
 
     // همبرگر منو
@@ -52,15 +43,6 @@ document.querySelectorAll('.question').forEach(q => {
 
 
 
-    // let loginMessage = document.getElementById('login-message');
-    // let contactName = document.getElementById('contact_name');
-
-    // let submitBtn = document.getElementById('submitBtn');
-
-    // submitBtn.addEventListener('click', function() {
-    //     loginMessage.textContent = `${contactName.value} عزیز، ثبت نامت انجام شد.`;
-    // });
-
 
 
 
@@ -73,6 +55,7 @@ window.onscroll = function() {
         btn.style.display = "none";
     }
 };
+
 
 // اسکرول نرم به بالا
 function scrollToTop() {
@@ -87,6 +70,12 @@ document.getElementById("backToTopBtn").addEventListener("click", scrollToTop);
 
 
 
+// منو سوالات
+document.querySelectorAll('.question').forEach(q => {
+    q.addEventListener('click', () => {
+        q.classList.toggle('active1');
+    });
+});
 
 
 
@@ -141,4 +130,134 @@ document.getElementById("backToTopBtn").addEventListener("click", scrollToTop);
             }
         });
     });
+
+    // اسلایدر
+    const slides = document.getElementById('slides');
+    const dots = document.querySelectorAll('.dot');
+    const prev = document.getElementById('prev');
+    const next = document.getElementById('next');
+    let currentIndex = 0;
+    const totalSlides = dots.length;
+    let slideInterval = setInterval(nextSlide, 4000); // خودکار
+
+    function goToSlide(index) {
+      slides.style.transform = `translateX(-${index * 100}%)`;
+      dots.forEach(dot => dot.classList.remove('active'));
+      dots[index].classList.add('active');
+      currentIndex = index;
+    }
+
+    function nextSlide() {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      goToSlide(currentIndex);
+    }
+
+    function prevSlide() {
+      currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+      goToSlide(currentIndex);
+    }
+
+    dots.forEach((dot, index) => {
+      dot.addEventListener('click', () => {
+        clearInterval(slideInterval);
+        goToSlide(index);
+        slideInterval = setInterval(nextSlide, 4000);
+      });
+    });
+
+    next.addEventListener('click', () => {
+      clearInterval(slideInterval);
+      nextSlide();
+      slideInterval = setInterval(nextSlide, 4000);
+    });
+
+    prev.addEventListener('click', () => {
+      clearInterval(slideInterval);
+      prevSlide();
+      slideInterval = setInterval(nextSlide, 4000);
+    });
+
+
+//     document.querySelectorAll('.video-slide').forEach(video => {
+//   video.addEventListener('click', () => {
+//     if (video.muted) {
+//       video.muted = false;       // اگر بی‌صدا بود، صدا را روشن کن
+//       video.volume = 1.0;        // اطمینان از اینکه صدا ۱ است
+//       if (video.paused) video.play(); // اگر ویدیو متوقفه، پخش کن
+//     } else {
+//       video.muted = true;        // اگر صدا روشن بود، خاموش کن
+//     }
+//   });
+// });
+const video = document.getElementById("myVideo");
+const playBtn = document.getElementById("playBtn");
+const pauseBtn = document.getElementById("pauseBtn");
+
+// فعال‌سازی ویدیو و صدا با کلیک روی پلی
+playBtn.addEventListener("click", () => {
+video.src = "assest/images/adver-video.mp4"; // فقط بارگذاری وقتی کاربر کلیک کرد
+video.play();
+video.muted = false;
+video.volume = 1;
+playBtn.style.display = "none";
+pauseBtn.style.display = "block";
+playBtn.classList.remove("blinking");
+});
+
+// توقف ویدیو با پاز
+pauseBtn.addEventListener("click", () => {
+video.pause();
+video.muted = true;
+pauseBtn.style.display = "none";
+playBtn.style.display = "block";
+playBtn.classList.add("blinking");
+});
+
+// دسته بندی اسلایدر
+
+// const catContainer = document.getElementById("cat-container");
+// const catPrev = document.getElementById("cat-prev");
+// const catNext = document.getElementById("cat-next");
+
+// catPrev.addEventListener("click", () => {
+//   catContainer.scrollBy({ left: -100, behavior: "smooth" });
+// });
+
+// catNext.addEventListener("click", () => {
+//   catContainer.scrollBy({ left: 100, behavior: "smooth" });
+// });
+
+const catContainer = document.getElementById("cat-container");
+const catPrev = document.getElementById("cat-prev");
+const catNext = document.getElementById("cat-next");
+
+catPrev.addEventListener("click", () => {
+  catContainer.scrollBy({ left: -100, behavior: "smooth" });
+});
+
+catNext.addEventListener("click", () => {
+  catContainer.scrollBy({ left: 100, behavior: "smooth" });
+});
+
+// لمس برای سوایپ
+let isDown = false;
+let startX;
+let scrollLeft;
+
+catContainer.addEventListener('touchstart', (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - catContainer.offsetLeft;
+  scrollLeft = catContainer.scrollLeft;
+});
+
+catContainer.addEventListener('touchmove', (e) => {
+  if (!isDown) return;
+  const x = e.touches[0].pageX - catContainer.offsetLeft;
+  const walk = (startX - x); // جهت حرکت
+  catContainer.scrollLeft = scrollLeft + walk;
+});
+
+catContainer.addEventListener('touchend', () => {
+  isDown = false;
+});
 });

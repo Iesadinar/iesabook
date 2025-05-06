@@ -6,21 +6,28 @@
 @font-face {
     font-family: shabnam;
     font-weight: 400;
-    src: url(../fonts/Shabnam-Bold.ttf);
+    src: url(../fonts/Shabnam-Bold.ttf); 
 }
 @font-face {
     font-family: sepidar;
     font-weight: 200;
     src: url(../fonts/sepidar.ttf);
 }
-
+@font-face {
+    font-family: iransans;
+    font-weight: 200;
+    src: url(../fonts/IRANSans-Edit.ttf);
+  }
+  @font-face {
+    font-family: iransans;
+    font-weight: 400;
+    src: url(../fonts/IRANSansBold-Edit.ttf);
+  }
 @font-face {
     font-family: aban;
     font-weight: 200;
     src: url(../fonts/W.aban_YasDL.com.ttf);
 }
-
-
 
 
 
@@ -37,14 +44,22 @@ html {
 *{
     color:#333;
     box-sizing: border-box;
-    font-family: shabnam;
-    font-weight: 200;
+
 }
 
 body{
 margin: 0px;
 direction: rtl;
+font-family: shabnam;
+font-weight: 200;
 }
+
+button{
+    font-family: shabnam;
+    font-weight: 200;
+
+}
+
 ul{
     list-style: none;
     margin: 0px;
@@ -1141,6 +1156,194 @@ animation: blink 1s infinite;
 50% { opacity: 0.3; }
 100% { opacity: 1; }
 }
+
+
+
+
+/* new new posts (updated design */
+
+
+
+.book-category{
+    font-family: iransans;
+
+
+}
+
+.category-slider1 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  width: 100%;
+  /* max-width: 700px; */
+  margin: 30px auto;
+  border-radius: 12px;
+  padding: 10px;
+  /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+
+
+
+}
+
+.category-container1 {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  scrollbar-width: none; /* فایرفاکس */
+}
+
+.category-container1::-webkit-scrollbar {
+  display: none; /* کروم */
+}
+
+
+.category1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.category-item1{
+  /* min-width: 140px; */
+  /* width: 150px;
+  height: auto; */
+  /* border-radius: 15px; */
+  flex-shrink: 0;
+  font-size: 14px;
+  white-space: nowrap;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+
+.category-info1{
+  width: 150px;
+  background-color: white;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  padding:5px;
+}
+
+.category-info1 img{
+  width: 100%;
+  height: 170px;
+  border-radius: 12px;
+
+
+}
+
+.book-name-p{
+  color: #000;
+  font-size: 15px;
+}
+.author-name-p{
+  color: #555;
+  font-size: 11px;
+
+
+}
+
+.category-info2{
+  width:  100%;
+  height: 58px;
+  background: #fff;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  font-size: 15px;
+  margin-top: 5px;
+  padding: 5px;
+  /* box-shadow: 0 0 5px rgba(0,0,0,0.2); */
+
+}
+
+.category-item1:hover  .category-info2 {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+
+  }
+
+  .category-item1:hover  .category-info1 img {
+filter:
+brightness(75%) ;
+  }
+
+
+.discount{
+border-radius: 6px;
+background-color: red;
+padding: 0px 5px;
+color: white;
+float: right;
+font-size: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+.discount-rice{
+text-decoration: line-through;
+margin-right: 98px;
+font-size: 12px;
+color: #666;
+
+}
+
+.main-rice {
+float: right;
+margin-right: 80px;
+
+
+}
+
+
+.toman{
+background: url(../images/toman.svg);
+width: 20px;
+height: 20px;
+margin-right: 120px;
+
+}
+
+
+
+.arrow3 {
+  color: #777;
+  font-size: 18px;
+  border: none;
+  padding: 3px 11px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 2;
+  transition: background 0.3s;
+  background-color: #fff;
+  box-shadow: 0 0 5px rgb(197 182 182 / 20%);
+
+}
+
+.arrow3:hover {
+  background-color: #ddd;
+}
+
+.left {
+  margin-left: 8px;
+}
+
+.right {
+  margin-right: 8px;
+}
+
+
+
+
+
 
 /*new posts setion (3)*/
 

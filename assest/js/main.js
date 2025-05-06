@@ -260,4 +260,17 @@ catContainer.addEventListener('touchmove', (e) => {
 catContainer.addEventListener('touchend', () => {
   isDown = false;
 });
+
+// posts slider :
+const catContainer1 = document.getElementById("cat-container1");
+const catPrev1 = document.getElementById("cat-prev1");
+const catNext1 = document.getElementById("cat-next1");
+
+catPrev1.addEventListener("click", () => {
+  catContainer1.scrollBy({ left: -100, behavior: "smooth" });
+});
+
+catNext1.addEventListener("click", () => {
+  catContainer1.scrollBy({ left: 100, behavior: "smooth" });
+});
 });

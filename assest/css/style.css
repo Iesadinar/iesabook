@@ -832,7 +832,7 @@ transform-origin: center;
     overflow: hidden;
     width: 100%;
     max-width: 700px;
-    margin: 30px auto;
+    margin: 30px auto 0 auto;
     /* background: white; */
     border-radius: 12px;
     padding: 10px;
@@ -1078,6 +1078,13 @@ cursor: pointer;
     background: #2ecc71; /* سبز */
   }
 
+
+  /* #course-slide{
+  } */
+  #course-slide1{
+    display: none;
+  }
+
   .dots {
     margin-top: 15px;
     direction: ltr; /* نقطه‌ها چپ به راست */
@@ -1167,7 +1174,6 @@ animation: blink 1s infinite;
 .book-category{
     font-family: iransans;
 
-
 }
 
 .category-slider1 {
@@ -1177,7 +1183,7 @@ animation: blink 1s infinite;
   overflow: hidden;
   width: 100%;
   /* max-width: 700px; */
-  margin: 30px auto;
+  margin: 0px auto;
   border-radius: 12px;
   padding: 10px;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
@@ -1325,7 +1331,6 @@ margin-right: 120px;
   transition: background 0.3s;
   background-color: #fff;
   box-shadow: 0 0 5px rgb(197 182 182 / 20%);
-
 }
 
 .arrow3:hover {
@@ -1602,7 +1607,7 @@ border-bottom-left-radius: 16px;
 
 /*why_us section (6)*/
 .why_us{
-    background-color: #fff ;
+    /* background-color: #fff ; */
 }
 
 
@@ -1671,7 +1676,6 @@ border-bottom-left-radius: 16px;
 
 }
 .questions{
-    background-color: #ffffff;
     width: 100%;
     height: auto;
     overflow: hidden;
@@ -1693,16 +1697,14 @@ border-bottom-left-radius: 16px;
     margin:  4px 8px;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0,0,0,.08) ;
-    padding: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 5px 15px 5px 5px ;
     cursor: pointer;
     border: 0.25px solid #dddada
 }
 
 .question > p{
-    font-family: aban;
-    font-size: 20px;
+    font-family: iransans;
+    font-size: 14px;
 
 }
 
@@ -1713,6 +1715,7 @@ border-bottom-left-radius: 16px;
     float: left;
     margin: 9px;
     transition: 0.5s;
+    filter: opacity(50%);
 }
 
 .question.active1 .q-arrow {
@@ -1726,8 +1729,10 @@ border-bottom-left-radius: 16px;
     line-height: 1.5;
     display: none; 
     margin-top: 12px;
-    font-size: 16px;
+    font-size: 14px;
+    margin: 10px;
     color: #555;
+    font-family: iransans;
 
 }
 
@@ -1736,7 +1741,12 @@ border-bottom-left-radius: 16px;
 
 }
 
-
+.sections-tilte{
+    font-family: iransans;
+    margin-right: 20px;
+    font-weight: 200px;
+    font-size: 20px
+}
 
 
 
@@ -1909,25 +1919,28 @@ margin: 0px;
 
 .single_product{
     width:100%;
-    height: 450px;
+    height: auto;
     padding: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
 }
 
 .single_product_right{
-    width: 50%;
+    width: 25%;
     height: 100%;
     float: right;
 }
 
 .single_product_right_pic{
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 0px auto 0px 0px ;
 }
 
 .single_product_right_pic img{
 
-    width:80%;
-    height: 350px;
+    width:95%;
+    height: 100%;
     border: 1px solid #666;
     border-radius: 8px;
 
@@ -1935,7 +1948,7 @@ margin: 0px;
 
 
 .single_product_left{
-    width: 50%;
+    width: 33%;
     height: 400px;
     float: right;
 }
@@ -1979,7 +1992,7 @@ font-size: 18px;
     height: 100px;
 }
 
-.single_product_left_body_btn button {
+/* .single_product_left_body_btn button {
     border: none;
     width: 200px;
     padding: 10px;
@@ -1994,10 +2007,308 @@ font-size: 18px;
     background-color: #d0fdc372;
     color: #2ab300;
     border: 1px solid  #2ab300;
+} */
+
+
+/* product informations section */
+.single_product_info{
+    width: 33%;
+
+}
+
+.product_info_item{
+    width: 100%;
+    height: 50px;
+    border-radius: 12px;
+    background-color: white;
+    font-family: iransans;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    padding: 8px;
+    margin: 10px;
+}
+
+
+.info-row-name{
+    width: 17%;
+    border-left: 0.5px solid #777;
+    margin-left: 15px;
+    padding-left: 4px;
+    float: right;
+    color: #888;
+}
+
+.info-row-content{
+    margin: 2px;
+    width: 72%;
+
 }
 
 
 
+
+
+
+.single_product_rating{
+    width: 33%;
+    padding: 10px 10px;
+    /* box-shadow: 0 8px 24px hsl(210 8% 62% / .2); */
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 12px;
+    margin-right: 3%;
+    margin-top: 10px;
+
+}
+
+
+.caption_about_book{
+    width: 90%;
+    text-align: center;
+}
+
+.product_poll{
+    display: flex;
+    width: 70%;
+    margin: 0px auto;
+
+}
+
+.poll_nmber{
+    font-family: iransans;
+    width: 10%;
+    text-align: center;
+    font-size: 22px;
+
+}
+
+.poll_line{
+    width:90%;
+    height: 10px;
+    background-color: #cccaca;
+    border-radius: 20px;
+    margin-top: 11px;
+}
+
+.poll_line_full5{
+    width:75%;
+    height: 10px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.poll_line_full4{
+    width:42%;
+    height: 10px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.poll_line_full3{
+    width:18%;
+    height: 10px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.poll_line_full2{
+    width:31%;
+    height: 10px;
+    background-color: orange;
+    border-radius: 20px;
+}
+.poll_line_full1{
+    width:12%;
+    height: 10px;
+    background-color: #ffa500;
+    border-radius: 20px;
+}
+
+.final_poll_number{
+    font-family: iransans;
+    font-size: 30px;
+    text-align: center;
+}
+
+
+.stars{
+    width: 50%;
+    height: auto;
+    justify-content: center;
+    margin: 0px auto;
+
+}
+
+.stars img{
+    width: 100%;
+
+
+}
+.single_product_left_body_btn{
+    margin: 0 auto;
+    width: 70%;
+
+}
+
+.single_product_left_body_btn button {
+    border: none;
+    width: 100%;
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 8px;
+}
+
+.single_product_left_body_btn button:hover{
+    background-color: rgb(173, 115, 5);
+    color: #ffffff;
+}
+
+ /* بخش توضیحات و نظرات کاربران 000000000000000000000000000000000000000000000*/
+ .tabs_section{
+    width: 95%;
+    margin-top: 15px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+ }
+
+
+
+ .box3 {
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    overflow: hidden;
+    height: auto;
+    font-family: iransans;
+    font-weight: 200;
+
+    }
+    
+    .tabs-wrapper3 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    background: white;
+    width: 45%;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+
+    font-family: 'shabnam';
+    font-weight: 200;
+    }
+    
+    .tab3 {
+    width: 45%;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #666;
+    position: relative;
+    background-color: transparent;
+    }
+    
+    .tab3.active3 {
+    color: orange;
+    }
+    
+    .tab3.active3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 20%;
+    left: 20%;
+    height: 3px;
+    background-color: orange;
+    border-radius: 2px;
+    }
+    
+    .content3 {
+    padding: 15px;
+    /* max-height: 100px; */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+
+    }
+    
+    .text-line3 { margin: 8px 0; }
+    
+    .line13 { color: #333; }
+    .line23 { color: #666; }
+    .line33 { color: #999; }
+    .line43 { color: #ccc; }
+    .line53 { color: #ebeaea; }
+    
+    .show-more3 {
+    background: none;
+    border: none;
+    color: orange;
+    cursor: pointer;
+    padding: 15px 15px;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: 16px;
+    }
+    
+    .hidden3 {
+    display: none;
+    }
+    
+/* قسمت عکس */
+
+.book-image-gallery {
+    max-width: 400px;
+    margin: auto;
+  }
+  
+  .main-image img {
+    width: 100%;
+    height: 350px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: opacity 0.3s;
+  }
+  
+  .thumbnail-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+  
+  .thumbnail-images img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid transparent;
+    border-radius: 12px;
+    transition: border 0.3s;
+  }
+  
+  .thumbnail-images img:hover,
+  .thumbnail-images img.active {
+    border: 2px solid #007bff;
+  }
+
+/* 
+    #descriptionBox {
+        max-height: 150px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+      
+      #descriptionBox.expanded {
+        max-height: 2000px; /* برای مشاهده بیشتر 
+      } */
+      
 
 /*user comments*/
 
@@ -2009,6 +2320,9 @@ font-size: 18px;
     color: #222;
     font-size: 22;
     margin-bottom: 10px;
+    font-family: shabnam;
+
+    
 }
 
 .user_comment{
@@ -2813,9 +3127,16 @@ padding-right: 15px;
 }
 
 
+@media screen and (max-width:1286px){
 
+.single_product_right{
+    width: 30%;
+}
+.single_product_info{
+    width: 70%;
+}
 
-
+}
 
 
 @media screen and (max-width:1190px){
@@ -2881,8 +3202,29 @@ padding-right: 15px;
 
     }
 
+    .single_product_right{
+        width: 40%;
+    }
+    .single_product_info{
+        width: 60%;
+    }
+    
+
+.tab3{
+    width: 45%;
+}
+
+
+
 
 }
+
+
+
+
+
+
+
 
 
 
@@ -2895,6 +3237,8 @@ padding-right: 15px;
 
 
 
+
+    
 
 
 
@@ -3045,12 +3389,23 @@ padding-right: 15px;
     width: 60%;
 
 }
+.single_product_left_body_btn button{
+    font-size: 15px;
 
 }
 
 
 
 
+
+
+.single_product_right{
+    margin: 0 auto;
+
+}
+
+
+}
 
 
 
@@ -3092,6 +3447,16 @@ padding-right: 15px;
     .container{
         padding: 0px 50px;
     }
+
+    .single_product_left_body_btn button{
+        font-size: 13px;
+    
+    }
+
+    .poll_nmber{
+        margin-left: 4px;
+    }
+    
 }
 @media screen and (max-width:718px){
     .new_post{
@@ -3245,11 +3610,33 @@ padding-right: 15px;
 }
 
 
-
-
-
+.single_product_left_body_btn button{
+    font-size: 12px;
 
 }
+
+.single_product_rating {
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto
+
+}
+.single_product_info{
+    margin: auto;
+    width:70%;
+
+}
+}
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:650px){
     .new_post{
@@ -3353,17 +3740,24 @@ padding-right: 15px;
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        font-size: 24px;
+        font-size: 15px;
         color: white;
         background-color: rgba(0, 0, 0, 0.3);
-        padding: 1px 15px;
-        padding-right: 12px;
+        padding: 1px 9px;
         cursor: pointer;
         border-radius: 50%;
         user-select: none;
         z-index: 1;
     }
-    
+    .row2 {
+        font-size: 15px;
+        padding: 1px 9px;
+        padding-right: 0px;
+        cursor: pointer;
+        border-radius: 50%;
+        user-select: none;
+      }
+
     
     .arrow2.left {
         left: 0px;
@@ -3374,14 +3768,80 @@ padding-right: 15px;
         right: 0px;
         left: auto; 
       }
+      .arrow3{
+        display: none;
+      }
+
+      #course-slide1{
+        display: block;
+      }
+    
+      #course-slide{
+        display: none;
+      }
+
+    .slide {
+        height: 155px;
+
+        }
+
+    .dots {
+        margin-top: 5px;
+      }
+    
+      .dot {
+        height: 8px;
+        width: 8px;
+        margin: 0 3px;
+      }
 
 
+
+      .advertisement_page_left{
+        float: left;
+        height: 211px;
+        padding: 0px;
+        border-radius: 10px;
+        margin-bottom: 20px
+
+        
+        }
+        .advertisement_page {
+            padding-top: 0px;
+        }
+
+
+
+        .container {
+            padding: 0px 11px;
+        }
+
+
+        .category-slider1 {
+            padding: 0 10 10 10;
+        }
+    }
+
+
+    @media screen and (max-width:610px){
+
+
+    .single_product_info {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+
+    .tab3 {
+        width: 50%;
+    }
+
+
+    .tabs-wrapper3 {
+        width: 50%;
+    }
 
     }
-    
-
-
-
 
 @media screen and (max-width:599px){
     h3 {
@@ -3483,6 +3943,11 @@ margin-left:10px;
     margin-right:10px;
     }
 
+
+
+    .single_product_info{width: 90%;}
+    .single_product_rating{width: 90%;}
+
 }
 
 @media screen and (max-width:560px){
@@ -3557,9 +4022,9 @@ h3 {
     .new_post{
         width:100%;
     }
-    .container{
-        padding: 0px 100px;
-    }
+    /* .container{
+        padding: 0px 11px;
+    } */
 
     .btndiv{
         margin-left:5px;
@@ -3646,7 +4111,7 @@ h3 {
 
 @media screen and (max-width:530px){
 
-.single_product_right{
+/* .single_product_right{
     width: 90%;
     margin: 0 5%;
 }
@@ -3654,7 +4119,7 @@ h3 {
     width: 90%;
     margin: auto;
     
-}
+} */
 
 .single_product_right_pic{
     margin: auto;
@@ -3679,6 +4144,11 @@ h3 {
  width: 250px;
 }
 
+
+.single_product_right {
+    width: 70%;
+    margin: 0 auto;
+}
 }
 
 
@@ -3692,9 +4162,9 @@ h3 {
     .new_post{
         width:100%;
     }
-    .container{
-        padding: 0px 40px;
-    }
+    /* .container{
+        padding: 0px 11px;
+    } */
 }
 
 @media screen and (max-width:525px){
@@ -3758,6 +4228,50 @@ h3 {
     #searchInput1 {
         width: 225px;
     }
+
+
+.tabs-wrapper3{
+    width: 95%;
+}
+
+    .box3 {
+        width: 95%;
+        background: white;
+        border-radius: 10px;
+        border-top-right-radius: 0px;
+        border-top-left-radius: 0px;
+
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+        overflow: hidden;
+        height: auto;
+        font-family: iransans;
+        font-weight: 200;
+    }
+
+
+    .tab3.active3 {
+        color: orange;
+        background-color: #fff6e5; /* بک‌گراند ملایم نارنجی */
+        border-radius: 12px 12px 0 0;
+        padding: 12px 10px;
+        box-shadow: 0 -1px 3px rgba(0,0,0,0.05); /* اختیاری برای زیبایی */
+      }
+      
+      /* اینو حذف کن چون خط زیر دیگه نمی‌خوای */
+      .tab3.active3::after {
+        content: none;
+      }
+
+
+
+
+
+
+
+
+
+
+
     
 }
 
@@ -3765,16 +4279,24 @@ h3 {
     .new_post{
         width:100%;
     }
-    .container{
-        padding: 0px 60px;
-    }
+    /* .container{
+        padding: 0px 11px;
+    } */
 
 
-
+    .single_product_right {
+        width: 92%;
 
 }
+.info-row-name {
+    width: 25%;
+}
 
+.arrow2{
+    display: none;
+}
 
+}
 
 
 @media screen and (max-width:485px){
@@ -4082,10 +4604,7 @@ h3 {
 
 
 @media screen and (max-width:410px){
-    .single_product_right {
-    width: 100%;
-    margin: 0px 0%;
-    }
+
 
         .like_text {
             font-size:13px;
@@ -4181,9 +4700,9 @@ h3 {
     .new_post{
         width:100%;
     }
-    .container{
-        padding: 0px 20px;
-    }
+    /* .container{
+        padding: 0px 11px;
+    } */
 }
 
 @media screen and (max-width:378px){
@@ -4214,6 +4733,11 @@ h3 {
     .input_search1 {
         margin-top: 14px;
     }
+
+    .info-row-name{    width: 22%;
+        font-size: 14px;}
+
+
 }
 
 

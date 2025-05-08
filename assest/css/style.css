@@ -54,6 +54,16 @@ font-family: shabnam;
 font-weight: 200;
 }
 
+html, body {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+
+
+
+
+
+
 button{
     font-family: shabnam;
     font-weight: 200;

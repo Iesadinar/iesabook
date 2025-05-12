@@ -1874,7 +1874,7 @@ border-bottom-left-radius: 16px;
     color:#ffd5a9;
 }
 .main_footer_text  p{
-    color:#fff;
+    color:#e1e1e1;
     font-size: 16px;
     text-align: justify;
     line-height: 1.75;
@@ -4387,6 +4387,10 @@ h3 {
     display: none;
 }
 
+.main_footer_text h3{
+    font-size: 20px;
+
+}
 }
 
 
@@ -4855,6 +4859,11 @@ h3 {
 
     h3 {
         font-size: 11px;
+    }
+
+    .main_footer_text h3{
+        font-size: 20px;
+
     }
     .main_footer_first p {
         font-size: 9px;

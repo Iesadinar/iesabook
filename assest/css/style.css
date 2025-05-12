@@ -230,6 +230,7 @@ padding-left: 90px;
     height: auto;
     transition: all .2s;
     cursor: pointer;
+    filter: invert(1);
 }
 
 #divid {

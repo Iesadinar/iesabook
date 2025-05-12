@@ -341,6 +341,56 @@
 ////////////////////////////////////////////////////////////////////////////////////////////
 document.addEventListener("DOMContentLoaded", function () {
 
+
+// تم
+    const main = document.querySelector(".main");
+    if (!main) return;
+
+    const savedTheme = localStorage.getItem("theme") || "day";
+    main.classList.add(savedTheme);
+
+    const buttons = document.querySelectorAll(".theme-buttons button");
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const theme = btn.className;
+        main.classList.remove("day", "night", "semi");
+        main.classList.add(theme);
+        localStorage.setItem("theme", theme);
+      });
+    });
+
+
+
+
+// 
+const thembuttons = document.querySelectorAll(".theme-buttons button");
+const saved = localStorage.getItem("activeThemeButton");
+
+if (saved) {
+  document.querySelector(`.theme-buttons .${saved}`)?.classList.add("active");
+}
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    thembuttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    localStorage.setItem("activeThemeButton", btn.className);
+  });
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   // منوهای اصلی (برای زیرمنوها)
   const mainMenuItems = document.querySelectorAll('.menu > li');
   mainMenuItems.forEach(item => {

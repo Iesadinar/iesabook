@@ -5126,7 +5126,8 @@ h3 {
   .main.night .contact_inputs label,
   .main.night  .contact_message label,
   .main.night  .succesfully_box h2,
-  .main.night  .succesfully_box h4{
+  .main.night  .succesfully_box h4,
+  .main.night .circle_item h2{
     color: #ffffff;
   }
   .main.night .discount-rice,
